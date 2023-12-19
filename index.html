@@ -12,7 +12,7 @@
     <nav class="nav container">
         <a href="#" class="nav__logo">
             <span class="nav__logo-circle">FP</span>
-            <span class="nav__logo-name">Florencia Camila Pereyra Ramos</span>
+            <span class="nav__logo-name">Florencia Pereyra</span>
         </a>
 
         <div class="nav__menu" id="nav-menu">
@@ -22,19 +22,19 @@
 
            <ul class="nav__list">
               <li class="nav__item">
-                <a href="#home" class="nav__link">Inicio</a>
+                <a href="#home" class="nav__link active-link">Home</a>
               </li>
 
               <li class="nav__item">
-                <a href="#about" class="nav__link">Sobre mi</a>
+                <a href="#about" class="nav__link">About Me</a>
               </li>
 
               <li class="nav__item">
-                <a href="#projects" class="nav__link">proyectos</a>
+                <a href="#projects" class="nav__link">Projects</a>
               </li>
 
               <li class="nav__item">
-                <a href="#contact" class="nav__link">Contacto</a>
+                <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
               </li>
            </ul>
 
@@ -45,6 +45,9 @@
         </div>
 
         <div class="nav__buttons">
+            <!----- theme button ----->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
             <!----- toggle button ----->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-4-line"></i>
@@ -89,7 +92,7 @@
             </div>
 
             <div class="home__info">
-                <p class="home description">
+                <p class="home__description">
                     <b>Desarrolladora Web Full Stack</b>, durante mi Bootcamp en SomosCoders realicé ptoyectos con tecmnologías como JavaScript, HTML5, TypeScript, CSS, Tailwind, MySQL, etc.
                 </p>
 
@@ -372,6 +375,7 @@
                                 <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Adress">
                                 <label for="email" class="contact__label">Email Adress</label>
                             </div>
+                        </div>
 
                             <div class="contact__box">
                                 <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="subject">
@@ -416,6 +420,36 @@
             </div>
         </section>
    </main>
+   <!---------- footer  --------------->
+    <footer class="footer">
+       <div class="footer__container container grid">
+         <ul class="footer__links">
+            <li>
+                <a href="#home" class="footer__link">Home</a>
+            </li>
+
+            <li>
+                <a href="#about" class="footer__link">About</a>
+            </li>
+
+            <li>
+                <a href="#projects" class="footer__link">Projects</a>
+            </li>
+         </ul>
+
+        <span class="footer__copy">
+            &#169; All Rights Reserved by
+            <a href="">Florencia_Pereyra</a>
+        </span>
+       </div>
+    </footer>
+     
+    <!-------  scroll up  -------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+
      <!----------- email js  ------------->
      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -423,10 +457,3 @@
     <script src="Assets/JavaScript/scripts.js"></script>
 </body>
 </html>
-
-
-<!------- LINK DEL VIDEO QUE ESTOY SIGUIENDO: 
-      https://www.youtube.com/watch?v=-uQIBlaZ4P0&list=PL07efmqYWHZ_rVeQ1ws0ER9eL6cxo-d5V
-
-      ACTUALMENTE VOY POR EL MINUTO 34:13
-    --------->

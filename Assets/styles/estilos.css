@@ -43,7 +43,6 @@
 
 @media screen and (min-width: 1150px) {
     :root {
-        --biggest-font-size: 4.5rem;
         --h1-font-size: 3rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
@@ -70,6 +69,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: background-color .4s; /*for dark mode */
     
 }
 
@@ -91,6 +91,79 @@ img {
     max-width: 100%;
     height: auto ;
 }
+
+/* theme */
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+/* variables darl theme */
+body.dark-theme {
+    --first-color: hsl(14, 80%, 50%);
+    --black-color: hsl(0, 0%, 18%);
+    --black-color-light: hsl(0, 0%, 30%);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 70%);
+    --body-color: hsl(0, 0%, 8%);
+    --container-color: hsl(0, 0%, 12%);
+}
+
+.dark-theme .shadow-header {
+    box-shadow: 0 1px 12px hsla(0, 0%, 0%, .6)
+}
+
+.dark-theme .section__title-1::after,
+.darl-theme .section__title-2::after {
+    background-color: hsla(14, 70%, 50%, .2);
+}
+
+.dark-theme :is(.home__arrow) {
+    filter: invert(100%);
+}
+
+.dark-theme .home__description b {
+    background: linear-gradient(90deg,
+                hsla(14, 80%, 50%, .3),
+                hsla(14, 80%, 50%, 0));
+}
+
+.dark-theme :is(.button__ghost, .services__icon i) {
+    color: var(---white-color);
+}
+
+.dark-theme .projects__card:hover {
+    background-color: var(--body-color);
+}
+
+.dark-theme :is(.contact__mail, .contact__input, .contact__label) {
+    background-color: var(--container-color);
+}
+
+.dark-theme .footer {
+    background-color: hsl(0, 0%, 4%);
+}
+
+.dark-theme::-webkit-scrollbar {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 30%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
 
 /*========= clases css reusables ======*/
 .container {
@@ -170,7 +243,7 @@ img {
     left: 0;
     background-color: var(--body-color);
     z-index: var(--z-fixed);
-    transition: box-shadow .4s;
+    transition: box-shadow .4s, background-color .4s;
 }
 
 .nav {
@@ -307,9 +380,18 @@ img {
     top: 0;
 }
 
-/* shadow header */
+/* add shadow header */
 .shadow-header{
     box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
+}
+
+/* active link */
+.active-link {
+    color: var(---white-color);
+}
+
+.active-link::after {
+    width: 25%;
 }
 
 /*============== home ===========*/
@@ -328,7 +410,7 @@ img {
 }
 
 .home__image {
- width: 220px;
+ width: 218px;
 }
 
 .home__img {
@@ -342,28 +424,24 @@ img {
     height: 100%;
     background-color: var(--container-color);
     position: absolute;
+    right: -.75rem;
     bottom: -.75rem;
     border: 4px solid var(--black-color);
     z-index: 5;
     transition: background-color .4s;
 }
 
-.home__arrow,
-.home__line {
+.home__arrow {
     position: absolute;
+    padding-top: 2%;
     /*filter: invert(1); los cambia de color*/
-    width: 50px;
+    width: 70px;
     transition: filter .4s;
 }
 
 .home__arrow {
-    left: 40%;
-    bottom: -4rem;
-}
-
-.home_line {
-    right: -2rem;
-    bottom: -.5rem;
+    left: 35%;
+    margin-top: 5px;
 }
 
 .home__perfil .geometric-box {
@@ -951,4 +1029,256 @@ margin-top: 4rem;
     position: absolute;
     bottom: -1.6rem;
     left: 0;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--black-color);
+}
+
+.footer__container {
+    padding-block: 3rem 2rem;
+    row-gap: 2.5rem;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.footer__link {
+color: var(---white-color);
+transition: color .4s;
+}
+
+.footer__link:hover {
+    color: var(--text-color-light);
+}
+
+.footer__copy {
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+.footer__copy a {
+  color: var(---white-color);
+  font-weight: var(--font-medium);
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 55%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 45%);
+}
+
+/* scroll up */
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--black-color);
+    display: inline-flex;
+    padding: 8px;
+    font-size: 1.2rem;
+    color: var(---white-color);
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s, background-color .4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-.5rem);
+}
+
+/*  show scroll up */
+.show-scroll {
+    bottom: 3rem;
+}
+
+/* breakpoints */
+/* for small devices */
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+    .home__image {
+        width: 180px;
+    }
+
+    .about__image {
+        width: 180px;
+    }
+    .about__shadow {
+        height: 330px;
+        right: -2.5rem;
+    }
+
+    .contact__data {
+        width: 100%;
+    }
+
+    .contact__data .section__title-2 {
+        transform: translateX(0);
+    }
+}
+
+/* for medium devices */
+@media screen and (min-width: 576px) {
+    .home__container,
+    .about__container,
+    .projects__container {
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+
+    .contact__data {
+        width: 350px;
+        padding: 4rem 1.5rem;
+        margin-inline: auto;
+    }
+
+    .contact__container {
+        grid-template-columns: 500px;
+        justify-content: center;
+    }
+
+    .contact__group {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+
+    .contact__social {
+        background-color: transparent;
+    }
+    .contact__social-arrow {
+        filter: none;
+    }
+    .contact__social-description-1 {
+        color: var(--text-color)
+    }
+    .contact__social-description-2 {
+        color: var(--title-color);
+    }
+    .dark-theme .contact__social-arrow {
+        filter: invert(1);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services__container {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .projects__container {
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
+/* for large divices */
+@media screen and (min-width: 1150px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .section {
+        padding-block: 7rem 2rem;
+    }
+    .section__title-1::after,
+    .section__title-2::after {
+        width: 70px;
+        height: 48px;
+    }
+
+    .geometric-box {
+        transform: scale(1.2);
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 2rem);
+        column-gap: 4rem;
+    }
+    .nav__close,
+    .nav__toggle,
+    .nav__title,
+    .nav__name {
+        display: none;
+    }
+    .nav__list {
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+    .nav__menu {
+        margin-left: auto;
+    }
+    .nav__link {
+        color: var(--text-color);
+        font-size: var(--normal-font-size);
+    }
+    .nav__link:hover {
+        color: var(--title-color);
+    }
+    .nav__link::after {
+        background-color: var(--title-color);
+    }
+
+    .active-link {
+        color: var(--title-color);
+    }
+
+    .nav__link-button {
+        background-color: var(--black-color);
+        color: var(---white-color);
+        padding: 1.1rem 1.5rem;
+    }
+    .nav__link-button:hover {
+        color: var(---white-color);
+    }
+
+    .nav__link-button::after {
+        background-color: transparent;
+    }
+
+    .change-theme {
+        color: var(--text-color);
+    }
+
+    .change-theme:hover {
+        color: var(--title-color);
+    }
+
+    .home__container {
+        grid-template-columns: repeat(2, 460px);
+        gap: 2rem 4rem;
+        align-items: center;
+        padding-block: 5.5rem;
+    }
+    .home__perfil {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    .home__image{
+        width: 350px;
+    }
+    .home__img {
+        width: 335px;
+    }
+    .home__shadow {
+        right: -1.25rem;
+        bottom: -1.25rem;
+        border: 6px solid var(--black-color);
+    }
 }

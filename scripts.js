@@ -35,3 +35,32 @@ const shadowHeader = () => {
                        : header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll', shadowHeader)
+
+/* email */
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) => {
+     e.preventDefault()
+
+     //serviceID - templateID - #form - publicKey
+     emailjs.sendForm('service_tyzaxga','template_g3z3s5p','#contact-form','8RDlacxnq2gpHfCdM')
+     .then(() => {
+        //shoe sent message
+        contactMessage.textContent = 'Message sent successfully✅'
+
+        //remove message after five seconds
+        setTimeout (() => {
+            contactMessage.textContent = ''
+        }, 5000)
+
+        //clear input fields
+        contactForm.reset()
+
+     }, () => {
+        //shoe error message
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+     })
+}
+
+contactForm.addEventListener('submit', sendEmail)

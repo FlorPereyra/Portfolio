@@ -1,4 +1,4 @@
-/* mostrar menu */
+/* show menu */
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
@@ -10,24 +10,24 @@ if(navToggle){
     })
 }
 
-/*ocultar menu*/
+/*close menu*/
 if(navClose){
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
 
-/* sacar para menu mobile */
+/* mobile menu */
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
-    //cuando se hace click en cada nav__link, se deja de mostrar el menu
+    // click on nav__link and close menu
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/* sombra de header */
+/* shadowheader */
 const shadowHeader = () => {
     const header = document.getElementById('header')
     // cuando el scroll es más grande que 50vh de altura..

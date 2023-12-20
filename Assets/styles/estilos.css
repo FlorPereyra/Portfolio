@@ -4,7 +4,7 @@
 :root {
     --header-height: 3.5rem;
 
-    /*===== colores ====*/
+    /*===== colors ====*/
 --first-color: hsl(14, 98%, 50%);
 --black-color: hsl(0, 0%, 0%);
 --black-color-light: hsl(0, 0%, 40%);
@@ -17,7 +17,7 @@
 
 
 
-/*========= Fuentes y tipografias ==========*/
+/*========= fonts and typography ==========*/
 --body-font: "Bai Jamjuree", sans-serif;
 --biggest-font-size: 2.5rem;
 --h1-font-size: 1.75rem;
@@ -28,7 +28,7 @@
 --smaller-font-size: .75rem;
 
 
-/*==== ancho de fuentes ======*/
+/*==== font width  ======*/
 --font-regular: 400;
 --font-medium: 500;
 --font-semi-bold: 600;
@@ -39,7 +39,7 @@
 --z-fixed: 100;
 }
 
-/*======== tipografia responsive =======*/
+/*========  responsive typography =======*/
 
 @media screen and (min-width: 1150px) {
     :root {
@@ -106,7 +106,7 @@ img {
     transition: color .3s;
 }
 
-/* variables darl theme */
+/* variables dark theme */
 body.dark-theme {
     --first-color: hsl(14, 80%, 50%);
     --black-color: hsl(0, 0%, 18%);

@@ -281,6 +281,60 @@ body.dark-theme {
     cursor: pointer;
 }
 
+.flags {
+    display: flex;
+    
+}
+#en {
+    margin-right: 0.5rem;
+}
+.flags__item {
+    width: 23px;
+    cursor: pointer;
+}
+ 
+
+/*.es-en {
+    margin-top: 0.10rem;
+}
+.en {
+    color: #333;
+    margin-left: .25rem;
+}
+.es {
+    color: #00a1ff;
+    margin-right: .25rem;
+}
+.check {
+    position: relative;
+    width: 30px;
+}
+.check:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background: #333;border-radius: 25px;
+}
+.check:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 15px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after {
+    left: 15px;
+    border: 2px solid #00a1ff;
+}
+.check:checked:before {
+    background: #00a1ff;
+}*/
+
 /* navegacion mobile */
 @media screen and (max-width: 1150px) {
     .nav__menu {

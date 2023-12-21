@@ -1,0 +1,76 @@
+{
+    "nav": {
+     "menu": "Menu",
+     "nav-home": "Home",
+     "nav-about": "About Me",
+     "nav-projects": "Projects",
+     "nav-contact": "Contact Me"
+    },
+    "home": {
+    "description": "<b>Fullstack Web Developer</b>, Hello! Thank you for being interested in my work. First, I would like to tell you about my approach when starting a project. I focus on a pleasant user experience and ensuring that all views adapt to different devices. Lastly, and not to bore you, I value team collaboration where various ideas can be shared and decisions made together seeking the best result.",
+    "scroll": "Scroll Down"
+    },
+    "about me": {
+      "title": "About Me.",
+      "description2": "I am passionate about <b>Web Development</b>, talking about both <b>Frontend, Backend</b> and <b>Databases</b>, I am committed to continuing to <b>learn</b> and <b>adapt</b> to every challenge that comes my way. If you agree with this vision and are looking for someone <b>proactive</b>, don't hesitate to contact me!I am ready to be part of <em>your team</em>.",
+      "skills": "<b>My Skills Are:</b> JavaScript, HTML, TypeScript, CSS, Tailwind, Node.js, GIT & Github, MySQL, Jira, Boostrap and Figma",
+      "button": "Contact Me"
+    },
+    "services": {
+      "title2": "Services.",
+
+      "service1-title": "Web Design",
+      "service1-description": "Designs focused on page harmony to ensure an excellent user experience. Everything is evaluated with prior prototyping in Figma or similar apps to reach the result that the client is looking for and guide them to reach their greatest potential.",
+
+      "service2-title": "Development",
+      "service2-description": "Organized development with agile methodologies such as Scrum using Jira or similar to organize each task into 'sprints'. I work with databases and as a frontend and/or backend developer.",
+      
+      "service3-title": "Mobile App",
+      "service3-description": "Designs focused on 'Mobile First' development and thus transform a Website into an App so that all users feel comfortable entering from the device they want."
+    },
+    "projects": {
+        "title3": "Projects.",
+
+        "subtitle-1": "App",
+        "project-pokedex-title": "Carrousel pokedex",
+        "project-pokedex": "Choose which Pokémon best suits your needs! You can compare each of them in the carousel. We consume an API and use the following technologies: JavaScript, HTML and CSS.",
+        "button-pokedex": "View",
+
+        "subtitle-2": "Game",
+        "project-triviator": "Could you win this movie trivia? I dare you to spin the wheel! Here I was in charge of the Backend and Database. The following technologies were mainly used: MySQL, Node.js, TypeScript, SCSS and React.",
+        "button-triviator": "View",
+
+        "subtitle-3": "Website",
+        "project-comic-title": "Comic Store",
+        "project-comic": "If you have free time and don't know what to do, we bring you an online Comics store. We use technologies such as JavaScript, CSS and HTML",
+        "button-comic": "View",
+
+        "subtitle-4": "Website",
+        "project-taskManager-title": "Task Manager",
+        "project-taskManager": "As I said before, an important work key for me is organization, here you have a task manager! We use technologies such as TypeScript, React and CSS",
+        "button-taskManager": "View"
+    },
+    "contact": {
+        "title4": "Contact Me.",
+        "contact-description1": "I will be attentive to my email to answer you as quickly as possible.",
+        "contact-description2": "  Just fill out the form to the right so we can establish communication. Please give me your <b>Name</b>, <b>Email Adress</b> and write a <b>subject</b> so I know who wants to contact me."
+    },
+    "email": {
+        "title5": "Send Me a Message",
+        "label1": "First Name",
+        "label2": "Email Adress",
+        "label3": "Subject",
+        "label4": "Message",
+
+        "button-send": "Send Message"
+    },
+    "social-data": {
+        "paragraph1": "If sending emails isn't your thing, no problem!",
+        "paragraph2": "Write me on my social networks"
+    },
+    "footer": {
+        "link1": "Home",
+        "link2": "About",
+        "link3": "Projects"
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "nav": {
+     "menu": "Menú",
+     "nav-home": "Incio",
+     "nav-about": "Sobre Mi",
+     "nav-projects": "Proyectos",
+     "nav-contact": "Contáctame"
+    },
+    "home": {
+    "description": "<b>Desarrolladora Web Fullstack</b>, ¡Hola! Gracias por interesarte en mi trabajo. Primero, me gustaría contarte de mi enfoque a la hora de iniciar un proyecto. Me concentro en una experiencia de usuario agradable y en garantizar que todas las vistas se adapten a los diferentes dispositivos. Por último, y para no aburrirte, valoro la colaboración en equipo donde se puedan compartir varias ideas y tomar decisiones en conjunto buscando el mejor resultado.",
+    "scroll": "Desliza Hacia Abajo"
+    },
+    "about me": {
+      "title": "Sobre Mi.",
+      "description2": "Me apasiona el <b>Desarrollo Web</b>, hablando tanto de <b>Frontend, Backend</b> como de <b>Bases de Datos</b>, estoy comprometida a seguir <b>aprendiendo</b > y <b>adaptarme</b> a cada desafío que se me presente. Si estás de acuerdo con esta visión y buscas a alguien <b>proactivo</b>, ¡No dudes en contactarme! Estoy lista para ser parte de <em>tu equipo</em>.",
+      "skills": "<b>Mis habilidades son:</b> JavaScript, HTML, TypeScript, CSS, Tailwind, Node.js, GIT y Github, MySQL, Jira, Boostrap y Figma.",
+      "button": "Contáctame"
+    },
+    "services": {
+      "title2": "Servicios.",
+
+      "service1-title": "Diseño Web",
+      "service1-description": "Diseños enfocados en la armonía de la página para asegurar una excelente experiencia de usuario. Todo se evalúa con un prototipado previo en Figma o apps similares para llegar al resultado que el cliente busca y guiarlo a alcanzar su mayor potencial.",
+
+      "service2-title": "Desarrollo",
+      "service2-description": "Desarrollo organizado con metodologías ágiles como Scrum usando Jira o similares para organizar cada tarea en 'sprints'. Trabajo con bases de datos y como desarrolladora frontend y/o backend.",
+      
+      "service3-title": "Aplicación Movil",
+      "service3-description": "Diseños abordados de forma 'Mobile First' y así transformar un Sitio Web en una App para que todos los usuarios se sientan cómodos ingresando desde el dispositivo que deseen."
+    },
+    "projects": {
+        "title3": "Proyectos.",
+
+        "subtitle-1": "App",
+        "project-pokedex-title": "Carrusel pokedex",
+        "project-pokedex": "¡Elige qué Pokémon se adapta mejor a tus necesidades! Puedes comparar cada uno de ellos en el carrusel. Consumimos una API y utilizamos las siguientes tecnologías: JavaScript, HTML y CSS.",
+        "button-pokedex": "Ver",
+
+        "subtitle-2": "Juego",
+        "project-triviator": "¿Podrías ganar esta trivia de películas? ¡Te reto a hacer girar la ruleta! En este proyecto estuve a cargo del Backend y Base de Datos. Se utilizaron principalmente las siguientes tecnologías: MySQL, Node.js, TypeScript, SCSS y React.",
+        "button-triviator": "Ver",
+
+        "subtitle-3": "Sitio Web",
+        "project-comic-title": "Tienda de Comics",
+        "project-comic": "Si tenes tiempo libre y no sabes qué hacer, te traemos una tienda de Cómics online. Utilizamos tecnologías como JavaScript, CSS y HTML.",
+        "button-comic": "Ver",
+
+        "subtitle-4": "Sitio Web",
+        "project-taskManager-title": "Gestor de Tareas",
+        "project-taskManager": "Como dije antes, una clave de trabajo importante para mí es la organización, entonces ¡que mejor que un gestor de tareas! Utilizamos tecnologías como TypeScript, React y CSS",
+        "button-taskManager": "Ver"
+    },
+    "contact": {
+        "title4": "Contáctame",
+        "contact-description1": "Voy a estar atenta a mi correo electrónico para responder lo más rápido posible.",
+        "contact-description2": "Solo completa el formulario a la derecha para que podamos estar en contacto. Por favor dame tu <b>Nombre</b>, <b>Dirección de correo electrónico</b> y escribí un <b>asunto</b> para saber quién quiere contactarme."
+    },
+    "email": {
+        "title5": "Enviame un Mensaje",
+        "label1": "Nombre",
+        "label2": "Email",
+        "label3": "Asunto",
+        "label4": "Mensaje",
+
+        "button-send": "Enviar Mensaje"
+    },
+    "social-data": {
+        "paragraph1": "Si enviar Emails no es lo tuyo, ¡no te hagas problema!",
+        "paragraph2": "Escribime por mis redes sociales"
+    },
+    "footer": {
+        "link1": "Inicio",
+        "link2": "Sobre mi",
+        "link3": "Proyectos"
+    }
+}

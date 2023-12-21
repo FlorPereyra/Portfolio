@@ -139,3 +139,23 @@ sr.reveal(`.home__name, .home__info,
            .about__container .section__title-1, .about__info,
            .contact__social, .contact__data`, {origin: 'left'})
 sr.reveal(`.services__card, .projects__card`, {interval :100})
+
+const flagsElement = document.getElementById("flags");
+
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async language => {
+  const requestJson = await fetch(`./languages/${language}.json`)
+  const texts = await requestJson.json()
+
+  for (const textToChange of textsToChange) {
+    const section = textToChange.dataset.section
+    const value = textToChange.dataset.value;
+
+    textToChange.innerHTML=texts[section][value];
+  }
+};
+
+flagsElement.addEventListener("click", (e) => {
+    changeLanguage(e.target.parentElement.dataset.language)
+});

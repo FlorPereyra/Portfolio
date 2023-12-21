@@ -14,7 +14,7 @@
       "title": "About Me.",
       "description2": "I am passionate about <b>Web Development</b>, talking about both <b>Frontend, Backend</b> and <b>Databases</b>, I am committed to continuing to <b>learn</b> and <b>adapt</b> to every challenge that comes my way. If you agree with this vision and are looking for someone <b>proactive</b>, don't hesitate to contact me!I am ready to be part of <em>your team</em>.",
       "skills": "<b>My Skills Are:</b> JavaScript, HTML, TypeScript, CSS, Tailwind, Node.js, GIT & Github, MySQL, Jira, Boostrap and Figma",
-      "button": "Contact Me"
+      "button": "<i class='ri-arrow-down-circle-line'></i>Resume"
     },
     "services": {
       "title2": "Services.",
@@ -62,7 +62,7 @@
         "label3": "Subject",
         "label4": "Message",
 
-        "button-send": "Send Message"
+        "button-send": "<i class='ri-send-plane-line'></i>Send Message"
     },
     "social-data": {
         "paragraph1": "If sending emails isn't your thing, no problem!",

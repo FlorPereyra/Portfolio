@@ -14,7 +14,7 @@
       "title": "Sobre Mi.",
       "description2": "Me apasiona el <b>Desarrollo Web</b>, hablando tanto de <b>Frontend, Backend</b> como de <b>Bases de Datos</b>, estoy comprometida a seguir <b>aprendiendo</b > y <b>adaptarme</b> a cada desafío que se me presente. Si estás de acuerdo con esta visión y buscas a alguien <b>proactivo</b>, ¡No dudes en contactarme! Estoy lista para ser parte de <em>tu equipo</em>.",
       "skills": "<b>Mis habilidades son:</b> JavaScript, HTML, TypeScript, CSS, Tailwind, Node.js, GIT y Github, MySQL, Jira, Boostrap y Figma.",
-      "button": "Contáctame"
+      "button": "<i class='ri-arrow-down-circle-line'></i>Currículum"
     },
     "services": {
       "title2": "Servicios.",
@@ -62,7 +62,7 @@
         "label3": "Asunto",
         "label4": "Mensaje",
 
-        "button-send": "Enviar Mensaje"
+        "button-send": "<i class='ri-send-plane-line'></i>Enviar Mensaje"
     },
     "social-data": {
         "paragraph1": "Si enviar Emails no es lo tuyo, ¡no te hagas problema!",
